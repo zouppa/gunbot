@@ -7,7 +7,7 @@ RUN apt-get update \
  && apt-get clean
 
 WORKDIR /tmp
-ADD https://github.com/GuntharDeNiro/BTCT/releases/download/2304/gunthy_linux.zip
+ADD https://github.com/GuntharDeNiro/BTCT/releases/download/2304/gunthy_linux.zip .
 
 RUN unzip -q lin.zip \
  && rm -rf lin.zip \
