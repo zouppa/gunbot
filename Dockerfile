@@ -12,12 +12,12 @@ ADD https://github.com/GuntharDeNiro/BTCT/releases/download/2304/gunthy_linux.zi
 RUN unzip -q gunthy_linux.zip \
  && rm -rf gunthy_linux.zip \
  && rm -rf __MACOSX \
- #&& mv gunthy-linux /gunbot \
- #&& rm /gunbot/config.js
+ && mv gunthy_linux /gunbot \
+ && rm /gunbot/config.js
 
- #WORKDIR /gunbot
+ WORKDIR /gunbot
 
-#EXPOSE 5000
-#VOLUME [ "/gunbot/backups", "/gunbot/logs", "/gunbot/json", "/gunbot/config.js" ]
+EXPOSE 5000
+VOLUME [ "/gunbot/backups", "/gunbot/logs", "/gunbot/json", "/gunbot/config.js" ]
 
-#CMD /gunbot/gunthy-linux
+CMD /gunbot/gunthy-linux
