@@ -18,6 +18,6 @@ RUN unzip -q gunthy_linux.zip \
  WORKDIR /gunbot
 
 EXPOSE 5000
-VOLUME [ "/gunbot/backups", "/gunbot/logs", "/gunbot/json"]
+#VOLUME [ "/gunbot/backups", "/gunbot/logs", "/gunbot/json"]
 
 CMD /gunbot/gunthy-linux
