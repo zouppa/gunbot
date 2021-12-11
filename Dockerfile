@@ -9,8 +9,8 @@ RUN apt-get update \
 WORKDIR /tmp
 ADD https://github.com/GuntharDeNiro/BTCT/releases/download/2304/gunthy_linux.zip .
 
-RUN unzip -q lin.zip \
- && rm -rf lin.zip \
+RUN unzip -q gunthy_linux.zip \
+ && rm -rf gunthy_linux.zip \
  && rm -rf __MACOSX \
  && mv lin /gunbot \
  && rm /gunbot/config.js
