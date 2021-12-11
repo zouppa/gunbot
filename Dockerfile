@@ -13,11 +13,11 @@ RUN unzip -q gunthy_linux.zip \
  && rm -rf gunthy_linux.zip \
  && rm -rf __MACOSX \
  && mv gunthy_linux /gunbot \
- && rm /gunbot/config.js
+ #&& rm /gunbot/config.js
 
  WORKDIR /gunbot
 
 EXPOSE 5000
-VOLUME [ "/gunbot/backups", "/gunbot/logs", "/gunbot/json", "/gunbot/config.js" ]
+VOLUME [ "/gunbot/backups", "/gunbot/logs", "/gunbot/json"]
 
 CMD /gunbot/gunthy-linux
