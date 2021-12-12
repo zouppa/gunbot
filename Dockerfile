@@ -11,7 +11,6 @@ RUN unzip -q gunthy_linux.zip \
  && rm -rf gunthy_linux.zip \
  && rm -rf __MACOSX \
  && mv gunthy_linux /gunbot 
- && rm /gunbot/config.js
 
  WORKDIR /gunbot
 
