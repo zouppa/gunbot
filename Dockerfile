@@ -12,8 +12,8 @@ RUN unzip -q gunthy_linux.zip \
  && rm -rf __MACOSX \
  && mv gunthy_linux /gunbot 
 
- WORKDIR /gunbot
+WORKDIR /gunbot
+RUN chmod 777 /gunbot
 
 EXPOSE 5000
-
 CMD /gunbot/gunthy-linux
